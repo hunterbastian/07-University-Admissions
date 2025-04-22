@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>University of Lisbon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header id="top">
+        <img src="images/logo1x.png" alt="logo">
+		<span>University of Lisbon</span>
+        <a href="#navlinks">&#9776;</a>
+
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav id="navlinks">
+        <a href="#top">&#10005;</a>
+
+        <ul>
+            <li><a href="#">Students</a></li>
+            <li class="active"><a href="#">Apply</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Tuition</a></li>
+        </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <h1>Welcome to University of Lisbon</h1>
+
+        <p>Welcome to the University of Lisbon, Portugal's premier academic institution dedicated to fostering innovation, creativity, and excellence. Each year, we welcome talented students from across Portugal and around the globe who seek an extraordinary educational experience in one of Europe's most vibrant cities.</p>
+
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Personal Information</h3>
+            <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name Here"></label>
+            <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here"></label>
+            <label>Cell Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here"></label>
+            <label>Email: <input type="email" name="email" autocomplete="email" required title="Email Here"></label>
+            <label>Zip Code: <input type="text" name="zipcode" autocomplete="postal-code" required pattern="\d{5}" title="Enter 5-digit Zipcode"></label>
+            <label>Address: <input type="text" name="address" autocomplete="street-address" required title="Enter Street Address"></label>
+            <label>City: <input type="text" name="city" autocomplete="address-level2" required title="Enter City"></label>
+            <label>State: <input type="text" name="state" autocomplete="address-level1" required title="Enter State"></label>
+
+            <!-- Added Communication Preferences section -->
+            <h3>Communication Preferences</h3>
+            <label><input type="radio" name="comm_pref" value="text"> Send Text Message Updates</label>
+            <label><input type="radio" name="comm_pref" value="email"> Send Email Updates</label>
+            <label><input type="radio" name="comm_pref" value="letter"> Send Letter Updates</label>
+
+            <h3>Previous School Information</h3>
+            <label>School Type:</label>
+            <label>
+                <select name="school_type">
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="high_school">High School / Secondary School</option>
+                    <option value="university">College / University</option>
+                    <option value="vocational">Vocational / Technical School</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <!-- Added High School Graduation Date -->
+            <label>High School Graduation Date: <input type="date" name="hs_grad_date"></label>
+
+            <h3>Education Completed</h3>
+            <label><input type="checkbox" name="edu_ged" value="ged"> High School / GED</label>
+            <label><input type="checkbox" name="edu_some_college" value="some_college"> Some College (No Degree)</label>
+            <label><input type="checkbox" name="edu_associates" value="associates"> Associate's Degree</label>
+            <label><input type="checkbox" name="edu_bachelors" value="bachelors"> Bachelor's Degree</label>
+
+            <!-- Added Account Information heading -->
+            <h3 class="account-info-heading">Account Information</h3>
+
+            <label>Username (6 or more)<input type="text" required minlength="6" title="Please enter a UserName that is at least 6 characters long"></label>
+
+            <label> Password (5-9 letters or numbers)<input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}" title="Enter a password between 5 to 9 characters"></label>
+
+        <input type="submit" value="Begin my journey">
+
+        </form>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>© 2023 • Hunter Bastian</p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 
